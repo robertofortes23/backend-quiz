@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz App - GET Request</title>
+  </head>
+  <body>
+    <h1>Quiz App - GET Request</h1>
+
+    <form action="/quiz" method="GET">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" /><br /><br />
+
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" /><br /><br />
+
+      <label for="topic">Topic:</label>
+      <input type="text" id="topic" name="topic" /><br /><br />
+
+      <label for="random">Randomize:</label>
+      <input
+        type="checkbox"
+        id="random"
+        name="random"
+        value="true"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div id="quiz-container"></div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
